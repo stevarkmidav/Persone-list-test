@@ -30,12 +30,12 @@
                             </div> 
                             <div class="menu__arrow"></div>
                         </a>
-                        <a href="#" class="menu__item menu__item_select">
+                        <a href="#" class="menu__item menu__item-select">
                             <div class="wrapper wrapper_select"> 
-                                <img src="icons/user-square(white).svg" alt="user-square" class="menu__icon menu__icon_select">
-                                <div class="menu__descr menu__descr_select">Customers</div>
+                                <img src="icons/user-square(white).svg" alt="user-square" class="menu__icon menu__icon-select">
+                                <div class="menu__descr menu__descr-select">Customers</div>
                             </div> 
-                            <div class="menu__arrow menu__arrow_select"></div>
+                            <div class="menu__arrow menu__arrow-select"></div>
                         </a>
                         <a href="#" class="menu__item">
                             <div class="wrapper"> 
@@ -68,6 +68,11 @@
                     </div>
                 </div>
             </aside>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
 
             <div class="wrapper__card">
                 <div class="greeting">Hello Evano &#128075,</div>
@@ -102,7 +107,9 @@
                             <div class="card__item__number">(225) 555-0118</div>
                             <div class="card__item__email">jane@microsoft.com</div>
                             <div class="card__item__country">United States</div>
-                            <div class="card__item__status card__item__status_active">Active</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-active">Active</div>
+                            </div>
                         </div>
                         <div class="card__item">
                             <div class="card__item__name">Floyd Miles</div>
@@ -110,7 +117,9 @@
                             <div class="card__item__number">(205) 555-0100</div>
                             <div class="card__item__email">floyd@yahoo.com</div>
                             <div class="card__item__country">Kiribati</div>
-                            <div class="card__item__status card__item__status_inactive">Inactive</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-inactive">Inactive</div>
+                            </div>
                         </div>
                         <div class="card__item">
                             <div class="card__item__name">Ronald Richards</div>
@@ -118,7 +127,9 @@
                             <div class="card__item__number">(302) 555-0107</div>
                             <div class="card__item__email">ronald@adobe.com</div>
                             <div class="card__item__country">Israel</div>
-                            <div class="card__item__status card__item__status_inactive">Inactive</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-inactive">Inactive</div>
+                            </div>
                         </div>
                         <div class="card__item">
                             <div class="card__item__name">Marvin McKinney</div>
@@ -126,7 +137,9 @@
                             <div class="card__item__number">(252) 555-0126</div>
                             <div class="card__item__email">marvin@tesla.com</div>
                             <div class="card__item__country">Iran</div>
-                            <div class="card__item__status card__item__status_active">Active</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-active">Active</div>
+                            </div>
                         </div>
                         <div class="card__item">
                             <div class="card__item__name">Jerome Bell</div>
@@ -134,7 +147,9 @@
                             <div class="card__item__number">(629) 555-0129</div>
                             <div class="card__item__email">jerome@google.com</div>
                             <div class="card__item__country">Réunion</div>
-                            <div class="card__item__status card__item__status_active">Active</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-active">Active</div>
+                            </div>
                         </div>
                         <div class="card__item">
                             <div class="card__item__name">Kathryn Murphy</div>
@@ -142,7 +157,9 @@
                             <div class="card__item__number">(406) 555-0120</div>
                             <div class="card__item__email">kathryn@microsoft.com</div>
                             <div class="card__item__country">Curaçao</div>
-                            <div class="card__item__status card__item__status_active">Active</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-active">Active</div>
+                            </div>
                         </div>
                         <div class="card__item">
                             <div class="card__item__name">Jacob Jones</div>
@@ -150,7 +167,9 @@
                             <div class="card__item__number">(208) 555-0112</div>
                             <div class="card__item__email">jacob@yahoo.com</div>
                             <div class="card__item__country">Brazil</div>
-                            <div class="card__item__status card__item__status_active">Active</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-active">Active</div>
+                            </div>
                         </div>
                         <div class="card__item">
                             <div class="card__item__name">Kristin Watson</div>
@@ -158,23 +177,25 @@
                             <div class="card__item__number">(704) 555-0127</div>
                             <div class="card__item__email">kristin@facebook.com</div>
                             <div class="card__item__country">Åland Islands</div>
-                            <div class="card__item__status card__item__status_inactive">Inactive</div>
+                            <div class="card__item__status__wrapper">
+                                <div class="card__item__status card__item__status-inactive">Inactive</div>
+                            </div>
                         </div>
                     </div>
                     <div class="card__quantity">
                         <div class="card__quantity__amount">Showing data 1 to 8 of  256K entries</div>
                         <div class="card__quantity__pages">
                             <a href="#" class="page">
-                                <div class="page__arrow page__arrow_left"></div>
+                                <div class="page__arrow page__arrow-left"></div>
                             </a>
-                            <a href="#" class="page page_active">1</a>
+                            <a href="#" class="page page-active">1</a>
                             <a href="#" class="page">2</a>
                             <a href="#" class="page">3</a>
                             <a href="#" class="page">4</a>
                             <div class="page__dots">&#8230;</div>
                             <a href="#" class="page">40</a>
                             <a href="#" class="page">
-                                <div class="page__arrow page__arrow_right"></div>
+                                <div class="page__arrow page__arrow-right"></div>
                             </a>
                         </div>
                     </div>

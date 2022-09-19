@@ -2,5 +2,167 @@
     .container {
         max-width: 100%;
     }
+    .hamburger {
+        z-index: 1000;
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 12px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: black;
+            margin-bottom: 4px;
+            transition: 0.5s all;
+        }
+        &-active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(5px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(5px) rotate(45deg);
+                }
+            }
+        }
+    }
     
-}   
+    .aside {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        padding: 20px 15px;
+        transition: 0.6s all;
+        &-open {
+            left: 0;
+        }
+    }
+
+
+    .list__wrapper {
+        height: calc(100vh - 130px);
+    }
+
+    .user {
+        padding-bottom: 0;
+    }
+
+   .wrapper__card {
+    z-index: 1;
+    width: 99%;
+    margin: 0 auto;
+    padding: 7px;
+   }
+
+   .greeting {
+    margin: 20px 0 0 20px;
+    font-size: 20px;
+   }
+
+   .card {
+    margin-top: 30px;
+        &__header {
+            margin: 40px 20px 0 20px;
+            height: 35px;
+        }
+        &__name {
+            font-size: 15px;
+        }
+        &__condition {
+            margin-top: 2px;
+            font-size: 12px;
+            line-height: 10px;
+        }
+        &__search__input {
+            margin: 0;
+            input {
+                width: 150px;
+            }
+        }
+        &__list {
+            margin-top: 40px;
+            display: block;
+        }
+        &__headings {
+            display: none;
+            padding: 0 7px 10px 7px;
+        }
+        &__item {
+            margin: 0 7px;
+            padding: 15px 0 15px 0;
+            display: block;
+
+
+            > div::before {
+                color: #B5B7C0;
+                flex: 0 0 50%;
+                padding-left: 5px;
+                white-space: nowrap;
+                min-width: 150px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            &__name {
+                display: flex;
+                &::before {
+                    content: 'Customer Name';
+                }
+            }
+            &__company {
+                display: flex;
+                &::before {
+                    content: 'Company';
+                }
+            }
+            &__number {
+                display: flex;
+                &::before {
+                    content: 'Phone Number';
+                }
+            }
+            &__email {
+                display: flex;
+                &::before {
+                    content: 'Email';
+                }
+            }
+            &__country {
+                display: flex;
+                &::before {
+                    content: 'Country';
+                }
+            }
+            &__status {
+                &__wrapper {
+                    display: flex;
+                    &::before {
+                        content: 'Status';
+                        margin-bottom: 0 !important;
+                }
+                }
+            }
+        }
+        &__quantity {
+            margin: 80px auto;
+            flex-direction: column-reverse;
+            &__pages {
+                margin-top: 10px;
+                scale: 1.1;
+            }
+            &__amount {
+                margin-top: 20px;
+            }
+        }
+    }
+}

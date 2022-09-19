@@ -4,6 +4,10 @@
     box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
 }
 
+.hamburger {
+    display: none;
+}
+
 .content__wrapper {
     display: flex;
     background-color: #FAFBFF;
@@ -69,7 +73,7 @@
         &:focus {
             outline: none;
         }
-        &_select {
+        &-select {
             background: $select-color; 
             &:hover {
                 background: #5a32eaee;
@@ -87,7 +91,7 @@
         font-size: 14px;
         letter-spacing: -0.01em;
         color: #9197B3;
-        &_select {
+        &-select {
             color: #FFFFFF;
         }
     }
@@ -102,7 +106,7 @@
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         margin-right: 8px;
-        &_select {
+        &-select {
             border: solid #FFFFFF;
             border-width: 0 2px 2px 0;
         }
@@ -138,18 +142,19 @@
     flex-direction: column;
     margin-left: 71px;
     margin-top: 41px;
+    width: 968px;
 }
 
 .greeting {
     font-size: 24px;
-
+    width: 185px;
 }
 
 .card {
     margin-top: 51px;
     box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
     border-radius: 30px;
-    width: 968px;
+    width: 100%;
     background: #FFFFFF;
     &__header {
         margin-top: 30px;
@@ -239,7 +244,6 @@
         padding: 20px 0 20px 0;
         border-bottom: 1px solid #EEEEEE;
         justify-content: space-between;
-        text-align: start;
         font-weight: 500;
         font-size: 14px;
         letter-spacing: -0.01em;
@@ -266,12 +270,12 @@
             width: 80px;
             height: 29px;
             border-radius: 4px;
-            &_active {
+            &-active {
                 background: $active-background-color;
                 border: 1px solid #00B087;
                 color: $active-text-color;
             }
-            &_inactive {
+            &-inactive {
                 background: $inactive-background-color;
                 border: 1px solid #DF0404;
                 color: $inactive-text-color;
@@ -312,7 +316,7 @@
                     background-color: #00000016;
                     transition: .3s;
                 }
-                &_active {
+                &-active {
                     background-color: $select-color;
                     color: #FFFFFF;
                     &:hover {
@@ -329,12 +333,12 @@
                     display: inline-block;
                     padding: 2px;
                     border-radius: 1px;
-                    &_left {
+                    &-left {
                         margin-left: 2px;
                         transform: rotate(135deg);
                         -webkit-transform: rotate(135deg);
                     }
-                    &_right {
+                    &-right {
                         margin-right: 2px;
                         transform: rotate(-45deg);
                         -webkit-transform: rotate(-45deg);
