@@ -2,10 +2,32 @@
     .container {
         max-width: 100%;
     }
+    
+    .aside {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        padding: 20px 15px;
+        transition: 0.6s all;
+        &-open {
+            left: 0;
+        }
+    }
+
+    .list__wrapper {
+        height: calc(100vh - 130px);
+    }
+
+    .user {
+        padding-bottom: 0;
+    }
+
     .hamburger {
         z-index: 1000;
         display: block;
-        position: absolute;
+        position: fixed;
         right: 30px;
         top: 40px;
         transform: translateY(-50%);
@@ -33,28 +55,6 @@
                 }
             }
         }
-    }
-    
-    .aside {
-        z-index: 100;
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 80%;
-        padding: 20px 15px;
-        transition: 0.6s all;
-        &-open {
-            left: 0;
-        }
-    }
-
-
-    .list__wrapper {
-        height: calc(100vh - 130px);
-    }
-
-    .user {
-        padding-bottom: 0;
     }
 
    .wrapper__card {
@@ -95,14 +95,12 @@
         }
         &__headings {
             display: none;
-            padding: 0 7px 10px 7px;
         }
         &__item {
             margin: 0 7px;
             padding: 15px 0 15px 0;
             display: block;
-
-
+            font-size: 12px;
             > div::before {
                 color: #B5B7C0;
                 flex: 0 0 50%;
@@ -149,7 +147,7 @@
                     &::before {
                         content: 'Status';
                         margin-bottom: 0 !important;
-                }
+                    }
                 }
             }
         }
@@ -158,7 +156,7 @@
             flex-direction: column-reverse;
             &__pages {
                 margin-top: 10px;
-                scale: 1.1;
+                scale: 1.05;
             }
             &__amount {
                 margin-top: 20px;
