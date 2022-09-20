@@ -218,23 +218,23 @@
         letter-spacing: -0.01em;
         color: #B5B7C0;
         &__name {
-            min-width: 118px;
+            width: 118px;
         }
         &__company {
-            min-width: 70px;
+            width: 70px;
         }
         &__number {
-            min-width: 109px;
+            width: 109px;
         }
         &__email {
-            min-width: 169px;
+            width: 169px;
         }
         &__country {
-            min-width: 94px;
+            width: 94px;
         }
         &__status {
             text-align: center;
-            min-width: 80px;
+            width: 80px;
         }
     }
     &__item {
@@ -249,19 +249,19 @@
         letter-spacing: -0.01em;
         color: #292D32;
         &__name {
-            min-width: 118px;
+            width: 118px;
         }
         &__company {
-            min-width: 70px;
+            width: 70px;
         }
         &__number {
-            min-width: 109px;
+            width: 109px;
         }
         &__email {
-            min-width: 169px;
+            width: 169px;
         }
         &__country {
-            min-width: 94px;
+            width: 94px;
         }
         &__status {
             display: flex;
