@@ -1,3 +1,6 @@
+.container {
+    max-width: 100%;
+}
 .aside {
     width: 306px;
     background: #FFFFFF;
@@ -10,7 +13,6 @@
 
 .content__wrapper {
     display: flex;
-    background-color: #FAFBFF;
     }
 
 .logo {
@@ -192,7 +194,6 @@
             line-height: 18px;
             letter-spacing: -0.01em;
             color: #B5B7C0;
-            outline: none;
             &::placeholder {
                 color: #B5B7C0;
             }

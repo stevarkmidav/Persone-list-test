@@ -1,14 +1,56 @@
-@media (max-width: 576px) {
-    .container {
-        max-width: 100%;
+@media (max-width: 1380px) {
+    .aside {
+        width: 280px;
     }
+
+    .wrapper__card {
+        margin-left: 25px;
+    }
+}
+
+
+@media (max-width: 1070px) {
+    .greeting {
+        margin: 0px 0 0 20px;
+        font-size: 24px;
+       }
     
+    .wrapper__card {
+        margin-left: 0;
+    }
+    .card {
+        margin-top: 20px;
+        scale: 0.95;
+        &__headings {
+            font-size: 13px;
+        }
+        &__item {
+            font-size: 13px;
+        }
+    }
+
+}
+
+@media (max-width: 1020px) {
+    .aside {
+        width: 260px;
+    }
+}
+
+@media (max-width: 998px) {
+    
+    .menu {
+        &__list {
+            margin-left: 20px;
+        }
+    }
+
     .aside {
         z-index: 100;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: -100%;
-        width: 80%;
+        width: 40%;
         padding: 20px 15px;
         transition: 0.6s all;
         &-open {
@@ -27,7 +69,7 @@
     .hamburger {
         z-index: 1000;
         display: block;
-        position: fixed;
+        position: absolute;
         right: 30px;
         top: 40px;
         transform: translateY(-50%);
@@ -65,28 +107,29 @@
    }
 
    .greeting {
-    margin: 20px 0 0 20px;
-    font-size: 20px;
+    margin: 30px 0 0 30px;
+    font-size: 24px;
    }
 
    .card {
     margin-top: 30px;
         &__header {
-            margin: 40px 20px 0 20px;
+            margin: 50px 30px 0 30px;
             height: 35px;
         }
         &__name {
-            font-size: 15px;
+            font-size: 20px;
         }
         &__condition {
             margin-top: 2px;
-            font-size: 12px;
+            font-size: 15px;
             line-height: 10px;
         }
         &__search__input {
             margin: 0;
+            width: 40%;
             input {
-                width: 150px;
+                width: 100%;
             }
         }
         &__list {
@@ -97,10 +140,10 @@
             display: none;
         }
         &__item {
-            margin: 0 7px;
+            margin: 0 30px 0 25px;
             padding: 15px 0 15px 0;
             display: block;
-            font-size: 12px;
+            font-size: 15px;
             > div::before {
                 color: #B5B7C0;
                 flex: 0 0 50%;
@@ -113,30 +156,35 @@
             }
             &__name {
                 display: flex;
+                width: 100%;
                 &::before {
                     content: 'Customer Name';
                 }
             }
             &__company {
                 display: flex;
+                width: 100%;
                 &::before {
                     content: 'Company';
                 }
             }
             &__number {
                 display: flex;
+                width: 100%;
                 &::before {
                     content: 'Phone Number';
                 }
             }
             &__email {
                 display: flex;
+                width: 100%;
                 &::before {
                     content: 'Email';
                 }
             }
             &__country {
                 display: flex;
+                width: 100%;
                 &::before {
                     content: 'Country';
                 }
@@ -144,6 +192,7 @@
             &__status {
                 &__wrapper {
                     display: flex;
+                    width: 100%;
                     &::before {
                         content: 'Status';
                         margin-bottom: 0 !important;
@@ -156,7 +205,7 @@
             flex-direction: column-reverse;
             &__pages {
                 margin-top: 10px;
-                scale: 1.05;
+                scale: 1.5;
             }
             &__amount {
                 margin-top: 20px;
@@ -164,3 +213,64 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .aside {
+        width: 55%;
+    }
+
+
+    .greeting {
+        margin: 20px 0 0 20px;
+        font-size: 20px;
+    }
+
+    .card {
+        &__header {
+            margin: 40px 30px 0 30px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .aside {
+        width: 90%;
+    }
+
+    .menu {
+        &__list {
+            margin-left: 20px;
+        }
+    }
+
+    .wrapper__card {
+        padding: 3px;
+    }
+
+   .card {
+        &__header {
+            margin: 30px 15px 0 15px;
+        }
+        &__name {
+            font-size: 15px;
+        }
+        &__condition {
+            font-size: 12px;
+        }
+        &__search__input {
+            margin: 0;
+            width: 150px;
+        }
+        &__item {
+            margin: 0 10px 0 10px;
+            font-size: 12px;
+        }
+        &__quantity {
+            &__pages {
+                scale: 1.05;
+            }
+        }
+    }
+}
+
